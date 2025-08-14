@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. María Teresa García López - Academic CV</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Georgia, serif; line-height: 1.6; color: #333; background: linear-gradient(135deg, #f0f8e8 0%, #e8f4f8 100%); min-height: 100vh; }
+        .container { max-width: 1200px; margin: 20px auto; padding: 20px; background: white; box-shadow: 0 0 30px rgba(0,0,0,0.1); border-radius: 15px; }
+        .header { display: flex; align-items: center; gap: 30px; margin-bottom: 40px; padding-bottom: 30px; border-bottom: 3px solid #8bc34a; }
+        .profile-photo { width: 200px; height: 200px; border-radius: 50%; object-fit: cover; border: 5px solid #8bc34a; box-shadow: 0 8px 25px rgba(139, 195, 74, 0.3); background: #f8fff8; display: flex; align-items: center; justify-content: center; font-size: 14px; text-align: center; color: #666; }
+        .header-text { flex: 1; }
+        h1 { color: #689f38; font-size: 2.5em; margin-bottom: 10px; font-weight: 700; }
+        .title { font-size: 1.3em; color: #42a5f5; margin-bottom: 15px; font-style: italic; }
+        .contact-info { background: #f8fff8; padding: 15px; border-radius: 10px; border-left: 4px solid #8bc34a; }
+        .contact-info p { margin: 5px 0; color: #666; }
+        .section { margin-bottom: 35px; }
+        .section h2 { color: #689f38; font-size: 1.8em; margin-bottom: 20px; padding-bottom: 10px; border-bottom: 2px solid #f0f8e8; position: relative; }
+        .section h2::after { content: ''; position: absolute; bottom: -2px; left: 0; width: 60px; height: 2px; background: #8bc34a; }
+        .highlight-box { background: linear-gradient(135deg, #8bc34a 0%, #42a5f5 100%); color: white; padding: 25px; border-radius: 15px; margin-bottom: 30px; box-shadow: 0 8px 25px rgba(139, 195, 74, 0.3); }
+        .highlight-box h3 { font-size: 1.5em; margin-bottom: 15px; }
+        .achievements { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin-bottom: 20px; }
+        .achievement-item { background: rgba(255,255,255,0.1); padding: 15px; border-radius: 10px; border-left: 4px solid #fff; }
+        .specialization-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px; }
+        .specialization-item { background: #f8fff8; padding: 15px; border-radius: 10px; border-left: 4px solid #8bc34a; transition: transform 0.3s ease; }
+        .specialization-item:hover { transform: translateY(-5px); box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+        .experience-item { background: #fff; border: 1px solid #f0f8e8; border-radius: 10px; padding: 20px; margin-bottom: 20px; position: relative; border-left: 4px solid #8bc34a; }
+        .experience-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px; }
+        .experience-title { font-weight: bold; color: #689f38; font-size: 1.1em; }
+        .experience-period { color: #666; font-style: italic; }
+        .experience-institution { color: #42a5f5; font-weight: 500; margin-bottom: 10px; }
+        .metrics-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 20px; margin: 20px 0; }
+        .metric-item { text-align: center; background: #f8fff8; padding: 20px; border-radius: 10px; border-top: 4px solid #8bc34a; }
+        .metric-number { font-size: 2em; font-weight: bold; color: #689f38; display: block; }
+        .metric-label { color: #666; font-size: 0.9em; margin-top: 5px; }
+        .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; }
+        .skill-category { background: #f8fff8; padding: 20px; border-radius: 10px; border-top: 4px solid #8bc34a; }
+        .skill-category h4 { color: #689f38; margin-bottom: 15px; font-size: 1.1em; }
+        .skill-list { list-style: none; }
+        .skill-list li { padding: 5px 0; padding-left: 20px; position: relative; }
+        .skill-list li::before { content: '▸'; color: #8bc34a; position: absolute; left: 0; }
+        .publication { background: #fff; border: 1px solid #e9ecef; border-radius: 8px; padding: 15px; margin-bottom: 15px; }
+        .pub-title { font-weight: bold; color: #689f38; margin-bottom: 8px; }
+        .pub-authors { color: #666; margin-bottom: 5px; }
+        .pub-journal { color: #5a6d5d; font-style: italic; }
+        @media (max-width: 768px) { .header { flex-direction: column; text-align: center; } .profile-photo { width: 150px; height: 150px; } h1 { font-size: 2em; } }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <img src="foto.jpg" alt="Dr. María Teresa García López" class="profile-photo">
+            <div class="header-text">
+                <h1>Dr. María Teresa García López</h1>
+                <div class="title">Postdoctoral Researcher - Plant Pathology & Advanced Phenotyping</div>
+                <div class="contact-info">
+                    <p><strong>Institution:</strong> Institute for Sustainable Agriculture (IAS-CSIC), Córdoba, Spain</p>
+                    <p><strong>Email:</strong> tgarcialopez@ias.csic.es</p>
+                    <p><strong>ORCID:</strong> 0000-0001-5638-8671</p>
+                    <p><strong>LinkedIn:</strong> linkedin.com/in/garlopter/</p>
+                    <p><strong>Location:</strong> Córdoba, Andalusia, Spain</p>
+                </div>
+            </div>
+        </header>
+
+        <section class="section">
+            <div class="highlight-box">
+                <h3>Professional Profile</h3>
+                <div class="achievements">
+                    <div class="achievement-item">
+                        <strong>Recent Achievements</strong><br>
+                        • Seal of Scientific Excellence from the European Commission in MSCA-PF-2023 and 2024 (94% and 85%)<br>
+                        • Juan de la Cierva Fellowship recipient (2024-present)
+                    </div>
+                    <div class="achievement-item">
+                        <strong>International Experience</strong><br>
+                        • Postdoctoral research across 4 continents<br>
+                        • 18-month research stay at UC-Davis, California<br>
+                        • Research experience in Kenya, Spain, and USA
+                    </div>
+                </div>
+                <p>I am genuinely passionate about my career as an agricultural engineer, which has taken me on an incredible journey across four continents. My focus areas include plant pathology, mycotoxin biocontrol, and innovative farming technologies. Currently, I'm working as a Juan de la Cierva postdoctoral researcher at the Institute for Sustainable Agriculture in Cordoba, Spain, exploring plant stress responses using advanced phenotyping technologies to address challenges like olive verticillium wilt and wheat yellow rust, all with a commitment to promoting sustainable agriculture through innovation and international collaboration.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Areas of Specialization</h2>
+            <div class="specialization-grid">
+                <div class="specialization-item">
+                    <strong>Plant Pathology & Biocontrol</strong><br>
+                    Aflatoxin biocontrol, disease epidemiology, microbial ecology
+                </div>
+                <div class="specialization-item">
+                    <strong>Advanced Phenotyping</strong><br>
+                    Image analysis, spectroscopy, hyperspectral imaging
+                </div>
+                <div class="specialization-item">
+                    <strong>Data Science & AI</strong><br>
+                    Python programming, machine learning, deep learning
+                </div>
+                <div class="specialization-item">
+                    <strong>International Collaboration</strong><br>
+                    Multilingual research, cross-cultural project management
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Professional Experience</h2>
+            
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div>
+                        <div class="experience-title">Juan de la Cierva Postdoctoral Researcher</div>
+                        <div class="experience-institution">Institute for Sustainable Agriculture (IAS-CSIC), Córdoba, Spain</div>
+                    </div>
+                    <div class="experience-period">2024 - Present</div>
+                </div>
+                <p>Development of advanced phenotyping techniques and image analysis for early disease detection in cereals and olive using NIR spectroscopy and machine learning.</p>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div>
+                        <div class="experience-title">Postdoctoral Researcher</div>
+                        <div class="experience-institution">Department of Agronomy, University of Córdoba (UCO), Spain</div>
+                    </div>
+                    <div class="experience-period">2022 - 2024</div>
+                </div>
+                <p>Research on olive cold tolerance and fungal disease epidemiology. Managed the Olive Varieties Examination Centre for UPOV protocols.</p>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div>
+                        <div class="experience-title">PhD Researcher (Joint Programme)</div>
+                        <div class="experience-institution">UC-Davis (USA) & University of Córdoba (Spain)</div>
+                    </div>
+                    <div class="experience-period">2017 - 2022</div>
+                </div>
+                <p>Doctoral research on aflatoxin biocontrol with 18-month stay at UC-Davis. Defended thesis with cum laude honors.</p>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div>
+                        <div class="experience-title">Research Associate</div>
+                        <div class="experience-institution">International Center for Tropical Agriculture (CIAT), Nairobi, Kenya</div>
+                    </div>
+                    <div class="experience-period">2016</div>
+                </div>
+                <p>Crop modeling using CropSyst for agricultural sustainability assessment in the Tana River basin.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Academic Education</h2>
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div>
+                        <div class="experience-title">PhD in Agricultural Sciences (cum laude)</div>
+                        <div class="experience-institution">University of Córdoba, Spain</div>
+                    </div>
+                    <div class="experience-period">2022</div>
+                </div>
+                <p><strong>Thesis:</strong> "Study of inoculum dynamics of aflatoxin biocontrol agents in nuts"<br>
+                <strong>International stay:</strong> 18 months at UC-Davis, California</p>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div>
+                        <div class="experience-title">Master's in Crop Production, Protection and Breeding</div>
+                        <div class="experience-institution">University of Córdoba, Spain</div>
+                    </div>
+                    <div class="experience-period">2015</div>
+                </div>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div>
+                        <div class="experience-title">Agricultural Engineering Degree</div>
+                        <div class="experience-institution">University of Córdoba, Spain</div>
+                    </div>
+                    <div class="experience-period">2014</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Scientific Publications</h2>
+            <div class="metrics-grid">
+                <div class="metric-item">
+                    <span class="metric-number">11</span>
+                    <div class="metric-label">JCR Publications</div>
+                </div>
+                <div class="metric-item">
+                    <span class="metric-number">200</span>
+                    <div class="metric-label">Citations</div>
+                </div>
+                <div class="metric-item">
+                    <span class="metric-number">6</span>
+                    <div class="metric-label">H-Index</div>
+                </div>
+                <div class="metric-item">
+                    <span class="metric-number">9</span>
+                    <div class="metric-label">First Author</div>
+                </div>
+            </div>
+
+            <div class="experience-item" style="text-align: center; background: linear-gradient(135deg, #8bc34a 0%, #42a5f5 100%); color: white;">
+                <h3>📚 Complete Publication List</h3>
+                <p>For a detailed list of all publications, including manuscripts in preparation and under review:</p>
+                <br>
+                <p><strong>🔗 <a href="https://scholar.google.com/citations?user=YOUR_ID" target="_blank" style="color: white; text-decoration: underline;">View Full Publication List on Google Scholar</a></strong></p>
+                <p><strong>📄 <a href="https://orcid.org/0000-0001-5638-8671" target="_blank" style="color: white; text-decoration: underline;">ORCID Profile</a></strong></p>
+                <br>
+                <p><em>Recent highlights include manuscripts on Verticillium wilt detection, aflatoxin contamination modeling, and wheat yellow rust characterization - all utilizing cutting-edge hyperspectral imaging and machine learning techniques.</em></p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h4>Plant Pathology</h4>
+                    <ul class="skill-list">
+                        <li>Disease epidemiology</li>
+                        <li>Biocontrol strategies</li>
+                        <li>Mycotoxin analysis</li>
+                        <li>Pathogen identification</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h4>Phenotyping & Imaging</h4>
+                    <ul class="skill-list">
+                        <li>Hyperspectral imaging</li>
+                        <li>NIR spectroscopy</li>
+                        <li>Image analysis</li>
+                        <li>Remote sensing</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h4>Programming & Data</h4>
+                    <ul class="skill-list">
+                        <li>Python programming</li>
+                        <li>Machine learning</li>
+                        <li>Statistical analysis</li>
+                        <li>Data visualization</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h4>Laboratory Techniques</h4>
+                    <ul class="skill-list">
+                        <li>qPCR and RT-PCR</li>
+                        <li>Microbiology</li>
+                        <li>Molecular biology</li>
+                        <li>Biochemical assays</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Current Research Projects</h2>
+            <div class="experience-item">
+                <div class="experience-title">MERCEDES - Improving cereal yield stability</div>
+                <div class="project-description">PID2023-149687OR-C33. Advanced phenomics for screening physiological traits in cereals focused on quantification and early detection of leaf fungal diseases and water stress.</div>
+                <div class="project-role">Role: Postdoctoral Researcher | Duration: 4 years (2024-2028) | Budget: €186,250</div>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-title">CERESTRES - Advanced phenomics for cereals</div>
+                <div class="project-description">PID2020-118650RR-C33. Advanced phenomics for screening physiological traits aimed at quantification and early detection of leaf fungal diseases and water stress.</div>
+                <div class="project-role">Role: Team Member | Duration: 4 years (2021-2025) | Budget: €156,090</div>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-title">EPIDEMIOLIVE - Olive Disease Epidemiology</div>
+                <div class="project-description">Epidemiology of airborne fungal diseases of olive and wild olive: spore dispersion, infection patterns, temporal trends, and risk prediction models.</div>
+                <div class="project-role">Role: Co-Investigator | Duration: 4 years (2022-2026) | Budget: €156,090</div>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-title">CDTI - Hepatocarcinogenic Fungi in Dried Fig</div>
+                <div class="project-description">Characterization and control of hepatocarcinogenic fungi in dried fig cultivation in collaboration with Coop. Valle del Jerte.</div>
+                <div class="project-role">Role: Co-Supervisor (PhD student: Zakaria Janfi) | Budget: €99,220</div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Awards & Recognition</h2>
+            <div class="experience-item" style="background: linear-gradient(135deg, #2c5530 0%, #4a7c59 100%); color: white; margin-bottom: 15px;">
+                <strong>🏆 MSCA-PF-2023:</strong> Score 94% - Seal of Scientific Excellence<br>
+                <strong>🏆 MSCA-PF-2024:</strong> Score 85% - Seal of Scientific Excellence<br>
+                <strong>🏆 Juan de la Cierva Fellowship:</strong> 2024-present<br>
+                <em>Environment and Geosciences (ENV) Panel - European Commission</em>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>International Experience</h2>
+            <div class="experience-item">
+                <div class="experience-title">Research Across 4 Continents</div>
+                <p><strong>🌍 Europe:</strong> Spain (UCO, IAS-CSIC), Netherlands (conferences)<br>
+                <strong>🌍 North America:</strong> USA (UC-Davis, 18-month research stay)<br>
+                <strong>🌍 Africa:</strong> Kenya (CIAT-Nairobi, crop modeling)<br>
+                <strong>🌍 South America:</strong> Collaboration with Paraguay (invited lectures)</p>
+            </div>
+        </section>
+        <section class="section">
+            <h2>Supervision & Teaching</h2>
+            <div class="experience-item">
+                <div class="experience-title">Current PhD Supervision</div>
+                <p><strong>Zakaria Janfi (2023-present):</strong> "Risk factors for aflatoxin contamination in fig trees in the Jerte Valley, Spain, including search for biological control agents"</p>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-title">Completed Supervisions</div>
+                <p><strong>Undergraduate Students:</strong> 4 Agricultural Engineering students at UCO (all highest qualifications)<br>
+                <strong>Postgraduate Students:</strong> 2 students - 1 Agricultural Engineering (UCO) + 1 international student at CIHEAM Mediterranean Agronomic Institute of Zaragoza (both highest distinctions)</p>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-title">Teaching Experience (2019-2024)</div>
+                <p><strong>Plant Pathology:</strong> 45 hours theoretical lectures in Master's in Agricultural Engineering: Integrated Crop Protection and Bachelor's in Agricultural Engineering and Rural Environment (UCO)<br>
+                <strong>Evaluation:</strong> Member of evaluation panels for 6 master's and bachelor's thesis defenses (2022-2024)</p>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-title">Workshop Organization</div>
+                <p><strong>2021:</strong> "Basic Knowledge of Sustainable Oliviculture" - Online course for Bolivians (UCO-Universidad Mayor de San Simón, Cochabamba)<br>
+                <strong>2019:</strong> "Open Science" seminar - Round of talks with invited speakers (UCO)</p>
+            </div>
+        </section>
